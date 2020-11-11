@@ -16,8 +16,8 @@ The REST api is implemented with Java and Spring Boot
 - 
 #### Deployment
 - There are a lot of ways to deploy such a spring boot application (GCP, AWS ..). I decided to go with heroku as it is easy to setup and free. 
-
-- The application can be executed and deployed with docker.
+- Heroku allows the integration with GitHub. Every merge request to the main/master branch automatically deploys a new version. In that case it would be important to run tests and let the CI first successfully pass the pipeline
+- The application can also be executed and deployed with docker.
 
  ```bash
  ## Build and run image/container
