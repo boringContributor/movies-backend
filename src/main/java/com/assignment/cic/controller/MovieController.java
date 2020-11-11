@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/movies")
+@CrossOrigin(origins = "http://mola.tech.com", maxAge = 3600)
 public class MovieController {
 
   @Autowired private MovieService movieService;
