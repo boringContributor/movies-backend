@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/movies")
-@CrossOrigin(origins = "https://cic-frontend.vercel.app/", maxAge = 3600)
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class MovieController {
 
   @Autowired private MovieService movieService;
